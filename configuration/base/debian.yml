@@ -16,6 +16,8 @@ lxc_profiles:
     200_default_root_device:
         path: lxc_profiles/general/default_root_device/default_root_device.yml
 {% endif %}
+    300_nesting:
+        path: lxc_profiles/general/lxc_nesting/enable_nesting.yml
 
 lxc_templates:
     100_etc_hostname:
@@ -36,6 +38,6 @@ playbooks:
 
 shared_folders:
     edi_workspace:
-        folder: edi-workspace
-        mountpoint: edi-workspace
+        folder: workspace
+        mountpoint: workspace
 
